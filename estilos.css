@@ -1,0 +1,111 @@
+
+body {
+    background-color: #490009;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+}
+
+
+p {
+    text-align: justify;
+}
+
+
+/* clases */
+.container {
+    display: inline-block;
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+}
+
+.derecha {
+    float: right;
+    width: 50%;
+    height: 100vh;
+}
+
+.div-article {
+    display: block;
+    margin: 10%;
+    padding: 10%;
+    justify-content: center;
+}
+
+.izquierda {
+    float: left;
+    width: 50%;
+    height: 100vh;
+}
+
+.img-article{
+    height: 70vh;
+    width: 70vh;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------seccion clima-------------------------------------- */
+/* .seccion-climas { */
+    /* background-color: black; */
+    /* color: aliceblue;
+    width: 100%;
+    margin: 20px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .seccion-climas .formulario-climas {
+    background-color: rgba(255, 255, 255, 0.1);
+  
+    border-radius: 10px;
+    width: 50%;
+    padding: 30px;
+  }
+  
+  .seccion-climas .formulario-clima-hoy {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom: 30px;
+  }
+  
+  .seccion-climas .formulario-clima-hoy tr,
+  th {
+    color: #000000;
+  }
+  
+  .seccion-climas .formulario-clima-hoy tr,
+  td {
+    color: #4d4d4d;
+  }
+  
+  .seccion-climas .formulario-climas tr th{
+    color: #fff;
+  }
+  .seccion-climas .formulario-climas tr td{
+    color: #fff;
+  } */
