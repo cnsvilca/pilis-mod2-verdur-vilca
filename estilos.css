@@ -3,7 +3,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   color: #fff;
   scroll-behavior: smooth;
 }
@@ -18,9 +19,9 @@ html, body {
   grid-template-rows: repeat(3, auto);
 
   grid-template-areas:
-      "header"
-      "main"
-      "footer";
+    "header"
+    "main"
+    "footer";
 }
 
 .contenedor .header,
@@ -29,54 +30,73 @@ html, body {
   background-color: rgb(20, 97, 71);
   /* padding: 10px; */
 }
-.contenedor .header{
+
+.contenedor .header {
   grid-area: header;
   background-color: #841934;
   color: aliceblue;
   height: 150px;
 }
 
-.contenedor .main{
+.contenedor .main {
   grid-area: main;
   background-color: #490009;
 }
 
-.contenedor .footer{
+.contenedor .footer {
   grid-area: footer;
   background-color: #010a1c;
   color: aliceblue;
 }
+
 /* ------------------- navbar ------------------- */
 
-a{
+a {
   text-decoration: none;
 }
-#navbar{
+
+#navbar {
   background-color: #490009;
+  height: fit-content;
+
 }
-#navbar a{
+
+#navbar a {
   color: #fff;
+  font-size: 25px;
 }
-#navbar .logo{
+
+#navbar .logo {
   float: right;
-  width:100px;
-  height:100px;
-  border-radius:50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-right: 30px;
 }
-#navbar ul{
+
+#navbar ul {
   list-style: none;
   text-transform: uppercase;
   float: left;
+  margin-top: 50px;
+  width: 60%;
+  height: 100%;
 }
-#navbar li{
+
+#navbar li {
   float: left;
+  height: 80%;
+  width: 30%;
 }
-#navbar li a{
+
+#navbar li a {
   padding: 20px;
   display: block;
   text-align: center;
 }
-#navbar li a:hover{
+
+#navbar li a:hover {
   background-color: #490009;
 }
 
@@ -108,59 +128,122 @@ a{
   justify-content: center;
   /* background-color: rgb(100, 62, 62); */
 }
-.section .article-img{
+
+.section .article-img {
   padding: 10px;
   border-radius: 20px;
 }
 
-.section p{
+.article-img {
+  width: 880px;
+  height: 696px;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.7));
+}
+
+.article-title-1 {
+  font-size: 6em;
+}
+
+.article-title-2 {
+  font-size: 2.5em;
+}
+
+.article-title {
+  font-size: 3em;
+  margin-top: 10px;
+}
+
+.article-video {
+  width: 880px;
+  height: 696px;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.7));
+
+}
+
+.article-txt {
+  font-size: 1.5em;
+}
+
+.section p {
   padding: 10%;
   text-align: justify;
 }
 
-#home,#nosotros{
+#home,
+#nosotros {
   background-color: white;
   color: #490009;
 }
-#clima{
+
+#clima {
   background-color: #841934;
   height: 50vh;
 }
-#clima h2{
+
+#clima h2 {
   display: block;
 }
 
 /* ------------------Formulario--------------- */
+
+.container-form {
+  width: 90%;
+  height: 90%;
+  border: 1px white double;
+}
+
+.contact-form {
+  margin-top: 0%;
+  padding: 10%;
+  padding-bottom: 0px;
+}
+
+.boton-form {
+  margin-top: 3px;
+  padding: 10%;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.7;
+
+}
 
 form .form-group {
   margin-bottom: 1rem;
   text-align: left;
 }
 
-form .form-group label{
+form .form-group label {
   color: #fff;
+  font-size: 1.5em;
 }
 
 form .form-control {
   width: 100%;
-  padding: 0.375rem 0.7rem;
-  font-size: 1rem;
+  /* padding: 0.375rem 0.7rem; */
+  height: 45px;
+  font-size: 1em;
   line-height: 1.7;
-  color: #fff;    
-  /* border: none; */
+  color: #fff;
+  border: none;
 
+}
+
+.form-title {
+  font-size: 2.5em;
+  margin-bottom: 10%;
+  /* text-decoration: underline 1px; */
 }
 
 /* Boton Form */
 .btn {
   display: inline-block;
-  font-size: 15px;
-  padding: 14px 23px;
+  font-size: 1.5em;
+  padding: 14px 0px;
   cursor: pointer;
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 4px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .btn-light {
@@ -179,31 +262,57 @@ form .form-control {
 /* ----------------- seccion clima ------------------ */
 
 .seccion-climas {
-  /* background-color: black; */
   color: aliceblue;
   width: 100%;
-  margin: 20px 20px;
   text-align: center;
-  display: flex;
+  /* display: block; */
+
+}
+
+.titulo-clima {
+  width: 100%;
+  height: 20%;
+  /* background-color: rgb(57, 86, 76); */
   align-items: center;
   justify-content: center;
+}
+#div-titulo-clima{
+  padding-top: 40px;
+}
+#div-titulo-clima h2{
+  font-size: 2em;
+}
+.article-clima-hoy {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 1fr;
+}
+
+#hoy{
+  /* background-color: aquamarine; */
+}
+#semana {
+  /* background-color: cadetblue; */
 }
 
 .seccion-climas .formulario-climas {
   background-color: rgba(255, 255, 255, 0.1);
-
+  width: 60%;
+  height: 60%;
+  margin-left: 20%;
+  margin-top: 4%;
   border-radius: 10px;
-  width: 50%;
-  padding: 30px;
 }
 
 .seccion-climas .formulario-clima-hoy {
   background-color: rgba(255, 255, 255, 0.9);
-  width: 300px;
-  height: 200px;
+  width: 60%;
+  height: 60%;
   border-radius: 10px;
-  margin: 10px;
-  padding-bottom: 30px;
+  margin-left: 50%;
+  margin-top: 10%;
 }
 
 .seccion-climas .formulario-clima-hoy tr,
@@ -216,9 +325,10 @@ td {
   color: #4d4d4d;
 }
 
-.seccion-climas .formulario-climas tr th{
+.seccion-climas .formulario-climas tr th {
   color: #fff;
 }
-.seccion-climas .formulario-climas tr td{
+
+.seccion-climas .formulario-climas tr td {
   color: #fff;
 }
