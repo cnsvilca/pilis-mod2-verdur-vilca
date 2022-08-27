@@ -1,6 +1,8 @@
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Aboreto', cursive;
 }
 
 html,
@@ -13,22 +15,20 @@ body {
 .contenedor {
   width: 100%;
   max-width: 1200%;
-  /* margin: 20px auto; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
 
   grid-template-areas:
-    "header"
-    "main"
-    "footer";
+      "header"
+      "main"
+      "footer";
 }
 
 .contenedor .header,
 .contenedor .main,
 .contenedor .footer {
   background-color: rgb(20, 97, 71);
-  /* padding: 10px; */
 }
 
 .contenedor .header {
@@ -45,17 +45,47 @@ body {
 
 .contenedor .footer {
   grid-area: footer;
-  background-color: #010a1c;
-  color: aliceblue;
+  background-color: white;
+  height: 100px;
+  border-top: 1px #490009 solid;
+  display: block;
+
+}
+
+/* ------------------- footer ------------------- */
+
+.wsp{
+ color:  #490009;
+ text-align: center;
+ margin-left: 40%;
+ width: 20%;
+ font-size: 2em;
+
+}
+
+#logo-wsp{
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin-left: 48%;
+  margin-top: 1em;
+}
+
+#nombres{
+  width: 40%;
+  font-size: 1em;
+  margin-left: 30%;  
+  letter-spacing: 2px;
 }
 
 /* ------------------- navbar ------------------- */
+
 
 a {
   text-decoration: none;
 }
 
-#navbar {
+#navbar  {
   background-color: #490009;
   height: fit-content;
 
@@ -116,7 +146,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: aliceblue; */
 }
 
 .section .right {
@@ -126,7 +155,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: rgb(100, 62, 62); */
 }
 
 .section .article-img {
@@ -167,6 +195,7 @@ a {
 .section p {
   padding: 10%;
   text-align: justify;
+  text-transform: lowercase;
 }
 
 #home,
@@ -213,6 +242,7 @@ form .form-group {
 }
 
 form .form-group label {
+  color: #fff;
   font-size: 1.5em;
 }
 
@@ -228,7 +258,6 @@ form .form-control {
 .form-title {
   font-size: 2.5em;
   margin-bottom: 10%;
-  /* text-decoration: underline 1px; */
 }
 
 /* Boton Form */
@@ -262,23 +291,23 @@ form .form-control {
   color: aliceblue;
   width: 100%;
   text-align: center;
-  /* display: block; */
-
 }
 
 .titulo-clima {
   width: 100%;
   height: 20%;
-  /* background-color: rgb(57, 86, 76); */
   align-items: center;
   justify-content: center;
 }
-#div-titulo-clima{
+
+#div-titulo-clima {
   padding-top: 40px;
 }
-#div-titulo-clima h2{
+
+#div-titulo-clima h2 {
   font-size: 2em;
 }
+
 .article-clima-hoy {
   width: 100%;
   height: 80%;
@@ -287,12 +316,6 @@ form .form-control {
   grid-template-rows: 1fr;
 }
 
-#hoy{
-  /* background-color: aquamarine; */
-}
-#semana {
-  /* background-color: cadetblue; */
-}
 
 .seccion-climas .formulario-climas {
   background-color: rgba(255, 255, 255, 0.1);
